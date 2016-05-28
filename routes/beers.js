@@ -5883,7 +5883,9 @@ var beers = [
 
 /* GET beers listing. */
 router.get('/', function(req, res, next) {
-  res.send(beers);
+   setTimeout(function() {
+      res.send(beers);
+   }, 3000);
 });
 
 module.exports = router;
